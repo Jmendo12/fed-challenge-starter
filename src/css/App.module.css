@@ -6,5 +6,13 @@
   column-gap: 20px;
   justify-content: center;
   align-content: center;
-  height: 100%;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .Container {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    padding: 15px 0;
+  }
 }

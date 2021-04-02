@@ -29,8 +29,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   font-family: OpenSansSemiBold;
-  color: #343434
+  color: #343434;
 }
 
 .trainerPhoto {
@@ -48,4 +49,12 @@
 .link {
   color: #3777b8;
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .cardContainer {
+    justify-self: center;
+    width: 400px;
+    height: 375px;
+  }
 }
