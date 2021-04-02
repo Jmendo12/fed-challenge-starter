@@ -1,0 +1,18 @@
+@font-face {
+  font-family: OpenSansReg;
+  src: url(../content/fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+.attributeContainer {
+  display: flex;
+  align-items: center;
+  font-family: OpenSansReg;
+  font-weight: 500;
+  color: #343434;
+}
+
+.icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}

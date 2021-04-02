@@ -1,0 +1,51 @@
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(../content/fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  align-content: start;
+  border: 2px solid #eaeaea;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.cardHeading {
+  display: flex;
+  justify-content: flex-end;
+  background-size: 100% 100%;
+}
+
+.cardBody {
+  display: grid;
+  align-content: start;
+  padding: 10px;
+}
+
+.cardBodyHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: OpenSansSemiBold;
+  color: #343434
+}
+
+.trainerPhoto {
+  width: 42px;
+  height: 42px;
+}
+
+.cardBodyAttributesRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.link {
+  color: #3777b8;
+  text-decoration: none;
+}

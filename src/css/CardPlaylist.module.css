@@ -1,0 +1,35 @@
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../content/fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(../content/fonts/Open_Sans/OpenSans-SemiBold.ttf);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  background-color: RGBA(10, 13, 49, 0.5)
+}
+
+.amount {
+  margin: 5px 0;
+  color: #fbfbfd;
+  font-family: OpenSansBold;
+}
+
+.text {
+  color: #f2f6f7;
+  font-family: OpenSansSemiBold;
+}
+
+.seriesIcon {
+  width: 30px;
+  height: 20px;
+}
