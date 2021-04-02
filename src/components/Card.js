@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import WorkoutAttribute from "./WorkoutAttribute";
 import CardPlaylist from "./CardPlaylist";
 
@@ -6,6 +6,19 @@ import styles from "../css/Card.module.css";
 
 import track from "../content/images/icons/track-icon.png";
 import clock from "../content/images/icons/timer-icon.png";
+
+function useSelected() {
+  const [selected, setSelected] = useState(false);
+
+  function toggleSelect() {
+    setSelected((prev) => !prev);
+  }
+
+  return {
+    selected,
+    toggleSelect
+  };
+}
 
 export default function Card({
   heading,
@@ -16,8 +29,18 @@ export default function Card({
   detailsUrl,
   playlistLength
 }) {
+
+  const { selected, toggleSelect } = useSelected();
+
+  const cardClass = selected
+    ? `${styles.cardContainer} ${styles.selected}`
+    : styles.cardContainer
+
   return (
-    <div className={styles.cardContainer}>
+    <div
+      className={cardClass}
+      onClick={toggleSelect}
+    >
       <div
         className={styles.cardHeading}
         style={{ backgroundImage: `url(${cardImageSrc})` }}

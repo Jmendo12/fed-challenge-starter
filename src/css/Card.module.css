@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.cardContainer.selected {
+  animation: boxShadow .5s ease-in forwards;
+}
+
 .cardHeading {
   display: flex;
   justify-content: flex-end;
@@ -56,5 +60,15 @@
     justify-self: center;
     width: 400px;
     height: 375px;
+  }
+}
+
+@keyframes boxShadow {
+  from {
+    box-shadow: none;
+  }
+  
+  to {
+    box-shadow: -5px 5px 10px #d9d9d9;
   }
 }
